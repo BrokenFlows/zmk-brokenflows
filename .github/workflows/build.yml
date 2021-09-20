@@ -33,16 +33,16 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: West Build (TG4x)
+      - name: West Build (Lak)
         run: west build -s zmk/app -b nice_nano -- -DSHIELD=lak -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: TG4x DTS File
+      - name: Lak DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano.dts.pre.tmp
-      - name: TG4x Kconfig file
+      - name: Lak Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 lak_nice_nano.uf2
-      - name: Archive (TG4x)
+      - name: Archive (Lak)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
