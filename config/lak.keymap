@@ -14,7 +14,7 @@
 			bindings = <&bootloader>;
 		};
 		combo_qwerty {
-			timeout-ms = <100>;
+			timeout-ms = <200>;
 			key-positions = <20 21 22 23>;
 			bindings = <&tog QWERTY>;
 		};	
@@ -28,7 +28,7 @@
 // ~/Desktop/lak.png
 
 			bindings = <
-	&kp LS(LG(Z)) &kp LC(UP) &kp F11   &kp LC(F2) &kp LS(F11) &kp LS(LG(TAB))   &kp LG(TAB)   &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP 
+	&kp LS(LG(Z)) &kp LC(UP) &kp F11   &kp LC(F2) &kp LS(F11) &kp LG(TAB)       &kp LG(TAB)   &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP 
 	&kp LG(Z)     &kp LG(X)  &kp LG(C) &kp LG(V)  &kp LS(F10) &kp LS(LG(GRAVE)) &kp LG(GRAVE) &kp C_PP   &kp C_PREV   &kp C_NEXT
 	&kp Z         &kp X      &kp C     &kp V      &kp LBKT    &kp LS(LC(TAB))   &kp LC(TAB)   &kp SPACE  &kp UP       &kp RET
 	&kp LCTRL     &kp LALT   &kp LGUI  &kp LSHFT  &kp RBKT    &kp LG(MINUS)     &kp LG(EQUAL) &kp LEFT   &kp DOWN     &kp RIGHT
