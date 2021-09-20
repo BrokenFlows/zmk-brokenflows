@@ -1,0 +1,30 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+	combos {
+        compatible = "zmk,combos";
+        combo_bootloader {
+            timeout-ms = <50>;
+            key-positions = <24 34>;
+            bindings = <&bootloader>;
+        };
+    };	
+
+	keymap {
+		compatible = "zmk,keymap";
+
+		default_layer {
+// -------------------------------------------------------------------------
+// ~/Desktop/lak.png
+
+			bindings = <
+	&kp K_REDO &kp LC(UP) &kp F11    &kp LC(F2)  &kp LS(F11) &kp LS(LG(TAB))   &kp LG(TAB)      &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP 
+	&kp K_UNDO &kp K_CUT  &kp K_COPY &kp K_PASTE &kp LS(F10) &kp LS(LG(GRAVE)) &kp LG(GRAVE)    &kp K_PP   &kp K_PREV   &kp K_NEXT
+	&kp Z      &kp X      &kp C      &kp V       &kp LBKT    &kp LS(LC(TAB))   &kp LC(TAB)      &kp SPACE  &kp UP       &kp RET
+	&kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT   &kp RBKT    &kp C_AC_ZOOM_OUT &kp C_AC_ZOOM_IN &kp LEFT   &kp DOWN     &kp RIGHT
+			>;
+		};
+	};
+};
+
