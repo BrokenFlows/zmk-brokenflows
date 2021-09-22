@@ -22,19 +22,19 @@
 		combo_enter {
 			timeout-ms = <100>;
 			key-positions = <18 19>;
-			layers = <QWERTY>
+			layers = <QWERTY>;
 			bindings = <&kp RET>;
 		};	
 		combo_tab {
 			timeout-ms = <100>;
 			key-positions = <0 1>;
-			layers = <QWERTY>
+			layers = <QWERTY>;
 			bindings = <&kp TAB>;
 		};	
 		combo_ESC {
 			timeout-ms = <100>;
 			key-positions = <10 11>;
-			layers = <QWERTY>
+			layers = <QWERTY>;
 			bindings = <&kp ESC>;
 		};	
     };	
