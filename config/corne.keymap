@@ -15,6 +15,10 @@
 #define MEDIA   4
 #define SWAP    5
 
+&kscan0 {
+  debounce-period = <12>;
+};
+
 / {
     behaviors {
         hm: homerow_mods {
