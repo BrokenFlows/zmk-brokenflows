@@ -3,6 +3,7 @@
 
 #define DEFAULT 0
 #define QWERTY  1
+#define NUMBER  2
 
 
 / {
@@ -17,6 +18,24 @@
 			timeout-ms = <200>;
 			key-positions = <20 21 22 23>;
 			bindings = <&tog QWERTY>;
+		};	
+		combo_enter {
+			timeout-ms = <100>;
+			key-positions = <18 19>;
+			layers = <QWERTY>;
+			bindings = <&kp RET>;
+		};	
+		combo_tab {
+			timeout-ms = <100>;
+			key-positions = <0 1>;
+			layers = <QWERTY>;
+			bindings = <&kp TAB>;
+		};	
+		combo_ESC {
+			timeout-ms = <100>;
+			key-positions = <10 11>;
+			layers = <QWERTY>;
+			bindings = <&kp ESC>;
 		};	
     };	
 
@@ -42,10 +61,24 @@
 // Z X C V B N M , . /
 // c a g s b s l d u r
 			bindings = <
-	&kp Q     &kp W    &kp E    &kp R     &kp T    &kp Y     &kp U    &kp I     &kp O   &kp P
-	&kp A     &kp S    &kp D    &kp F     &kp G    &kp H     &kp J    &kp K     &kp L   &kp SQT
-    &kp Z     &kp X    &kp C    &kp V     &kp B    &kp N     &kp M    &kp COMMA &kp DOT &kp FSLH
-	&kp LCTRL &kp LALT &kp LGUI &kp LSHFT &kp BSPC &kp SPACE &kp LEFT &kp DOWN  &kp UP  &kp RIGHT
+	&kp Q     &kp W    &kp E    &kp R     &kp T    &kp Y            &kp U    &kp I     &kp O   &kp P
+	&kp A     &kp S    &kp D    &kp F     &kp G    &kp H            &kp J    &kp K     &kp L   &kp SQT
+    &kp Z     &kp X    &kp C    &kp V     &kp B    &kp N            &kp M    &kp COMMA &kp DOT &kp FSLH
+	&kp LCTRL &kp LALT &kp LGUI &kp LSHFT &kp BSPC &lt NUMBER SPACE &kp LEFT &kp DOWN  &kp UP  &kp RIGHT
+			>;
+		};
+
+		number_layer {
+// ------------------------------------------------------------------------
+// 
+// 1 2 3 4 5 6 7 8 9 0
+// 
+//
+			bindings = <
+	&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+	&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+    &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+	&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 			>;
 		};
 	};
