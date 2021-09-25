@@ -2,7 +2,7 @@ file_format: "1"
 id: lak
 name: Lak
 type: shield
-url: 
+url: https://github.com/BrokenFlows/Lak
 requires:
   - pro_micro
 exposes:
