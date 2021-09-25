@@ -1,0 +1,13 @@
+file_format: "1"
+id: ishka
+name: Ishka
+type: shield
+url: 
+requires:
+  - pro_micro
+exposes:
+features:
+  - keys
+siblings:
+  - ishka_left
+  - ishka_right

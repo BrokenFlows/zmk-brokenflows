@@ -1,0 +1,6 @@
+config SHIELD_ISHKA
+    def_bool $(shields_list_contains,ishka_left)
+
+config SHIELD_ISHKA_RIGHT
+    def_bool $(shields_list_contains,ishka_right)
+
