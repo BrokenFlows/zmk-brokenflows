@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
 #define QWERTY  1
@@ -9,12 +10,32 @@
 / {
 	combos {
 		compatible = "zmk,combos";
-// useful combo, bad positioning
-// 		combo_bootloader {
-// 			timeout-ms = <100>;
-// 			key-positions = <24 27 29 34>;
-// 			bindings = <&bootloader>;
-// 		};
+		combo_bootloader {
+			timeout-ms = <150>;
+			key-positions = <14 24 34>;
+			bindings = <&bootloader>;
+		};
+		combo_l_reset {
+			timeout-ms = <150>;
+			key-positions = <14 24>;
+			bindings = <&reset>;
+		};
+		combo_r_reset {
+			timeout-ms = <150>;
+			key-positions = <15 25>;
+			bindings = <&reset>;
+		};
+		combo_clear {
+			timeout-ms = <150>;
+			key-positions = <0 1 2 3>;
+			bindings = <&bt BT_CLR>;
+		};
+		combo_grave {
+			timeout-ms = <100>;
+			key-positions = <30 31>;
+			layers = <DEFAULT>;
+			bindings = <&kp GRAVE>;
+		};	
 		combo_quote {
 			timeout-ms = <100>;
 			key-positions = <28 29>;
