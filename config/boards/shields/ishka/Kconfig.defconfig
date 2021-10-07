@@ -1,28 +1,21 @@
-if SHIELD_ISHKA
+if SHIELD_ISHKA_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "Ishka"
-
-endif
-
-if ISHKA_LEFT
-
-config ZMK_KEYBOARD_NAME
-    default "Ishka Left"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
 
 endif
 
-if ISHKA_RIGHT
+if SHIELD_ISHKA_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "Ishka Right"
 
 endif
 
-if ISHKA_LEFT || ISHKA_RIGHT
+if SHIELD_ISHKA_LEFT || SHIELD_ISHKA_RIGHT
 
 config ZMK_SPLIT
     default y
