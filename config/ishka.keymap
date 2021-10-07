@@ -15,14 +15,9 @@
 			key-positions = <14 24 34>;
 			bindings = <&bootloader>;
 		};
-		combo_l_reset {
+		combo_reset {
 			timeout-ms = <150>;
 			key-positions = <14 24>;
-			bindings = <&reset>;
-		};
-		combo_r_reset {
-			timeout-ms = <150>;
-			key-positions = <15 25>;
 			bindings = <&reset>;
 		};
 		combo_clear {
