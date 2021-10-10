@@ -1,10 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-
-#define DEFAULT 0
-#define FUNC    1
-#define NAV     2
+#include "46-key.h"
 
 &kscan0 {
   debounce-period = <12>;
@@ -12,45 +9,11 @@
 
 / {
     behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping_term_ms = <225>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
+		#include behaviors.dtsi
     };
 
 	combos {
-		compatible = "zmk,combos";
-		combo_bootloader {
-			timeout-ms = <150>;
-			key-positions = <14 34>;
-			bindings = <&bootloader>;
-		};
-		combo_reset {
-			timeout-ms = <150>;
-			key-positions = <13 33>;
-			bindings = <&reset>;
-		};
-		combo_clear {
-			timeout-ms = <150>;
-			key-positions = <0 1 2 3>;
-			bindings = <&bt BT_CLR>;
-		};
-		combo_grave {
-			timeout-ms = <100>;
-			key-positions = <30 31>;
-			layers = <DEFAULT>;
-			bindings = <&kp GRAVE>;
-		};	
-		combo_quote {
-			timeout-ms = <100>;
-			key-positions = <28 29>;
-			layers = <DEFAULT>;
-			bindings = <&kp SQT>;
-		};	
+		#include 46-key_combos.dtsi
     };	
 
 	keymap {
@@ -80,11 +43,11 @@
 // |     |     |     |     |     |   |     |     |     |     |     |
 //             |     |     |     |   |     |     |     |
                         bindings = <
-    &kp F1   &kp F2   &kp F3   &kp F4    &kp F5  &kp F6  &kp F7    &kp F8   &kp F9   &kp F10   
-    &trans   &trans   &trans   &trans    &kp F11 &kp F12 &trans    &trans   &trans   &trans   
-    &kp LCTL &kp LALT &kp LGUI &kp LSHFT &trans  &trans  &kp RSHFT &kp RGUI &kp LALT &kp RCTL
-    &trans   &trans   &trans   &trans    &trans  &trans  &trans    &trans   &trans   &trans
-                        &trans   &trans    &trans  &trans  &trans    &trans
+    &kp F1   &kp F2   &kp F3   &kp F4    &kp F5    &kp F6  &kp F7    &kp F8   &kp F9   &kp F10   
+    XXX      XXX      XXX      XXX       &kp F11   &kp F12 XXX       XXX      XXX      XXX      
+    &kp LCTL &kp LALT &kp LGUI &kp LSHFT XXX       XXX     &kp RSHFT &kp RGUI &kp LALT &kp RCTL
+    XXX      XXX      XXX      XXX       XXX       XXX     XXX       XXX      XXX      XXX   
+                      ___      ___       ___       ___     ___       ___   
                         >;
 				};
 
@@ -96,11 +59,11 @@
 // |      |      |      |      |      | |INSERT| HOME | PGDN | PGUP |  END  |
 //               |      |      |      | |RETURN| SPACE|  TAB |
                         bindings = <
-    &trans   &trans   &trans   &trans    &trans   &trans        &kp LC(F2) &trans    &trans    &trans
-    &trans   &trans   &trans   &trans    &trans   &kp LS(LG(Z)) &kp LG(X)  &kp LG(C) &kp LG(V) &kp LG(Z)
-    &kp LCTL &kp LALT &kp LGUI &kp LSHFT &trans   &kp CAPS      &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT
-    &trans   &trans   &trans   &trans    &trans   &kp INS       &kp HOME   &kp PG_DN &kp PG_UP &kp END
-                      &trans   &trans    &trans   &kp RET       &kp SPACE  &kp TAB
+    XXX      XXX      XXX      XXX       XXX   XXX      &kp MNBR  XXX       XXX       XXX   
+    XXX      XXX      XXX      XXX       XXX   &kp REDO &kp CUT   &kp COPY  &kp PASTE &kp UNDO
+    &kp LCTL &kp LALT &kp LGUI &kp LSHFT XXX   &kp CAPS &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
+    XXX      XXX      XXX      XXX       XXX   &kp INS  &kp HOME  &kp PG_DN &kp PG_UP &kp END
+                      ___      ___       ___   &kp RET  &kp SPACE &kp TAB
                         >;
 				};
 
