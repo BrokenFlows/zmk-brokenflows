@@ -24,7 +24,7 @@ COMBO(quote, 40, &kp SQT,   27 28, BASE)
 COMBO(grave, 40, &kp GRAVE, 31 32, BASE)
 COMBO(bslsh, 40, &kp BSLH,  37 38, BASE)
 
-COMBO(btldr, 150, &bootloader, 14 34, BASE)
-COMBO(reset, 150, &reset, 13 33, BASE)
-COMBO(clear, 150, &bt BT_CLR, 0 2 4, BASE)
+COMBO(btldr, 100, &bootloader, 14 34, BASE)
+COMBO(reset, 100, &reset, 13 33, BASE)
+COMBO(clear, 100, &bt BT_CLR, 0 2 4, BASE)
 
