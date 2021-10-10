@@ -13,6 +13,7 @@
     };
 
     combos {
+        #include "46-key_combos.dtsi"
 		combo_bootloader {
 			timeout-ms = <150>;
 			key-positions = <14 34>;
@@ -31,7 +32,6 @@
 			bindings = <&bt BT_CLR>;
 			layers = <BASE>;
 		};
-        #include "46-key_combos.dtsi"
     };    
 
     keymap {
