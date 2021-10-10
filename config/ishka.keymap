@@ -13,6 +13,24 @@
     };
 
     combos {
+		combo_bootloader {
+			timeout-ms = <150>;
+			key-positions = <14 34>;
+			bindings = <&bootloader>;
+			layers = <BASE>;
+		};
+		combo_reset {
+			timeout-ms = <150>;
+			key-positions = <13 33>;
+			bindings = <&reset>;
+			layers = <BASE>;
+		};
+		combo_clear {
+			timeout-ms = <150>;
+			key-positions = <0 2 4>;
+			bindings = <&bt BT_CLR>;
+			layers = <BASE>;
+		};
         #include "46-key_combos.dtsi"
     };    
 
