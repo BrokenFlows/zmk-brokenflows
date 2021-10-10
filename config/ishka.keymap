@@ -9,11 +9,11 @@
 
 / {
     behaviors {
-		#include behaviors.dtsi
+		#include "behaviors.dtsi"
     };
 
 	combos {
-		#include 46-key_combos.dtsi
+		#include "46-key_combos.dtsi"
     };	
 
 	keymap {
