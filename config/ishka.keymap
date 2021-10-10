@@ -4,20 +4,20 @@
 #include "46-key.h"
 
 &kscan0 {
-  debounce-period = <12>;
+    debounce-period = <12>;
 };
 
 / {
     behaviors {
-		#include "behaviors.dtsi"
+        #include "behaviors.dtsi"
     };
 
-	combos {
-		#include "46-key_combos.dtsi"
-    };	
+    combos {
+        #include "46-key_combos.dtsi"
+    };    
 
-	keymap {
-		compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
@@ -33,9 +33,9 @@
    &kp Z       &kp X      &kp C      &kp V       &kp B   &kp N  &kp M       &kp COMMA  &kp DOT    &kp FSLH
                      &lt FUNC DEL &lt NAV BSPC &kp ESC   &kp RET &kp SPACE &kp TAB
                         >;
-		};
+        };
 
-				func_layer {
+                func_layer {
 // -----------------------------------------------------------------------------------------
 // | F1  | F2  | F3  | F4  | F5  |   | F6  | F7  | F8  | F9  | F10 |
 // |     |     |     |     | F11 |   | F12 |     |     |     |     |
@@ -49,9 +49,9 @@
     XXX      XXX      XXX      XXX       XXX       XXX     XXX       XXX      XXX      XXX   
                       ___      ___       ___       ___     ___       ___   
                         >;
-				};
+                };
 
-				nav_layer {
+                nav_layer {
 // --------------------------------------------------------------------------
 // |      |      |      |      |      | |      |MENUBR|      |      |       |
 // |      |      |      |      |      | | REDO | PASTE| COPY |  CUT |  UNDO |
@@ -65,7 +65,7 @@
     XXX      XXX      XXX      XXX       XXX   &kp INS  &kp HOME  &kp PG_DN &kp PG_UP &kp END
                       ___      ___       ___   &kp RET  &kp SPACE &kp TAB
                         >;
-				};
+                };
 
 
 
@@ -83,7 +83,7 @@
 //    &kp Z  &kp X  &kp C  &kp V  &kp B   &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH
 //  &lt MEDIA DEL &kp BSPC &lt SWAP ESC   &lt ARW RET &kp SPACE &lt NUM TAB
 //                         >;
-// 		};
-	};
+//         };
+    };
 };
 
