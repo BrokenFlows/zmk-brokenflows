@@ -18,11 +18,11 @@ compatible = "zmk,combos";
         layers = <LAYERS>; \
     };
 
-COMBO(minus, 100, &kp MINUS, 16 17, BASE)
-COMBO(equal, 100, &kp EQUAL, 17 18, BASE)
-COMBO(quote, 100, &kp SQT,   27 28, BASE)
-COMBO(grave, 100, &kp GRAVE, 31 32, BASE)
-COMBO(bslsh, 100, &kp BSLH,  37 38, BASE)
+COMBO(minus, 40, &kp MINUS, 16 17, BASE)
+COMBO(equal, 40, &kp EQUAL, 17 18, BASE)
+COMBO(quote, 40, &kp SQT,   27 28, BASE)
+COMBO(grave, 40, &kp GRAVE, 31 32, BASE)
+COMBO(bslsh, 40, &kp BSLH,  37 38, BASE)
 
 COMBO(btldr, 150, &bootloader, 14 34, BASE)
 COMBO(reset, 150, &reset, 13 33, BASE)
