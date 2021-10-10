@@ -1,3 +1,5 @@
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 /*                KEY POSITIONS
 
   ╭────────────────────╮ ╭────────────────────╮
@@ -20,6 +22,8 @@ compatible = "zmk,combos";
 
 COMBO(bootloader, 150, 14 34, &bootloader, BASE)
 COMBO(reset, 150, 13 33, &reset, BASE)
+
+COMBO(clear, 150, 0 2 4, &bt BT_CLR, BASE)
 
 COMBO(minus, 100, 16 17, &kp MINUS, BASE)
 COMBO(equal, 100, 17 18, &kp EQUAL, BASE)
