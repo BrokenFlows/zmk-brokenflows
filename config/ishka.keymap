@@ -19,71 +19,69 @@
     keymap {
         compatible = "zmk,keymap";
 
-                default_layer {
+        default_layer {
 // -----------------------------------------------------------------------------------------
 // |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  |
 // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
 // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
 // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
 //             | DEL | BSPC| ESC |   | ENT | SPACE| TAB |
-                        bindings = <
-   &kp N1      &kp N2     &kp N3     &kp N4      &kp N5  &kp N6 &kp N7      &kp N8     &kp N9     &kp N0
-   &kp Q       &kp W      &kp E      &kp R       &kp T   &kp Y  &kp U       &kp I      &kp O      &kp P
-   &hm LCTRL A &hm LALT S &hm LGUI D &hm LSHFT F &kp G   &kp H  &hm RSHFT J &hm RCMD K &hm LALT L &hm RCTRL SEMI
-   &kp Z       &kp X      &kp C      &kp V       &kp B   &kp N  &kp M       &kp COMMA  &kp DOT    &kp FSLH
-                     &lt FUNC DEL &lt NAV BSPC &kp ESC   &kp RET &kp SPACE &kp TAB
-                        >;
+            bindings = <
+    &kp N1      &kp N2     &kp N3     &kp N4      &kp N5  &kp N6 &kp N7      &kp N8     &kp N9     &kp N0
+    &kp Q       &kp W      &kp E      &kp R       &kp T   &kp Y  &kp U       &kp I      &kp O      &kp P
+    &hm LCTRL A &hm LALT S &hm LGUI D &hm LSHFT F &kp G   &kp H  &hm RSHFT J &hm RCMD K &hm LALT L &hm RCTRL SEMI
+    &kp Z       &kp X      &kp C      &kp V       &kp B   &kp N  &kp M       &kp COMMA  &kp DOT    &kp FSLH
+                      &lt FUNC DEL &lt NAV BSPC &kp ESC   &kp RET &lt MDA SPACE &kp TAB
+                >;
         };
 
-                func_layer {
+        func_layer {
 // -----------------------------------------------------------------------------------------
 // | F1  | F2  | F3  | F4  | F5  |   | F6  | F7  | F8  | F9  | F10 |
 // |     |     |     |     | F11 |   | F12 |     |     |     |     |
 // | LCTL| LALT| LGUI|LSHFT|     |   |     |RSHFT|RGUI |LALT |RCTL |
 // |     |     |     |     |     |   |     |     |     |     |     |
 //             |     |     |     |   |     |     |     |
-                        bindings = <
+            bindings = <
     &kp F1   &kp F2   &kp F3   &kp F4    &kp F5    &kp F6  &kp F7    &kp F8   &kp F9   &kp F10   
     XXX      XXX      XXX      XXX       &kp F11   &kp F12 XXX       XXX      XXX      XXX      
     &kp LCTL &kp LALT &kp LGUI &kp LSHFT XXX       XXX     &kp RSHFT &kp RGUI &kp LALT &kp RCTL
     XXX      XXX      XXX      XXX       XXX       XXX     XXX       XXX      XXX      XXX   
                       ___      ___       ___       ___     ___       ___   
-                        >;
-                };
+                >;
+        };
 
-                nav_layer {
+        nav_layer {
 // --------------------------------------------------------------------------
 // |      |      |      |      |      | |      |MENUBR|      |      |       |
 // |      |      |      |      |      | | REDO | PASTE| COPY |  CUT |  UNDO |
-// | CTRL | ALT  | GUI  |SHIFT |      | |CAPSLK| LEFT | DOWN |  UP  | RIGHT |
+// | LCTL | LALT | LGUI |LSHFT |      | |CAPSLK| LEFT | DOWN |  UP  | RIGHT |
 // |      |      |      |      |      | |INSERT| HOME | PGDN | PGUP |  END  |
 //               |      |      |      | |RETURN| SPACE|  TAB |
-                        bindings = <
+            bindings = <
     XXX      XXX      XXX      XXX       XXX   XXX      &kp MNBR  XXX       XXX       XXX   
     XXX      XXX      XXX      XXX       XXX   &kp REDO &kp CUT   &kp COPY  &kp PASTE &kp UNDO
     &kp LCTL &kp LALT &kp LGUI &kp LSHFT XXX   &kp CAPS &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
     XXX      XXX      XXX      XXX       XXX   &kp INS  &kp HOME  &kp PG_DN &kp PG_UP &kp END
                       ___      ___       ___   &kp RET  &kp SPACE &kp TAB
-                        >;
-                };
+                >;
+        };
 
-
-
-// real keymap commented out until build completed
-//                 default_layer {
-// // -----------------------------------------------------------------------------------------
-// // |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
-// // |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
-// // |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
-// //             | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-//                         bindings = <
-//    &kp N1 &kp N2 &kp N3 &kp N4 &kp N5  &kp N6 &kp N7 &kp N8    &kp N9  &kp N0
-//    &kp Q  &kp W  &kp E  &kp R  &kp T   &kp Y  &kp U  &kp I     &kp O   &kp P
-//    &kp A  &kp S  &kp D  &kp F  &kp G   &kp H  &kp J  &kp K     &kp L   &kp SEMI
-//    &kp Z  &kp X  &kp C  &kp V  &kp B   &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH
-//  &lt MEDIA DEL &kp BSPC &lt SWAP ESC   &lt ARW RET &kp SPACE &lt NUM TAB
-//                         >;
-//         };
+        media_layer {
+// --------------------------------------------------------------------------
+// |BT_CLR|      |      |      |      | |      |      |      |      |       |
+// |      |      |      |      |      | |      |      |      |      |       |
+// | PREV | DOWN |  UP  | NEXT |      | |      |RSHFT | RGUI | LALT | RCTL  |
+// | BT0  | BT1  | BT2  | BT3  | BT4  | |      |      |      |      |       |
+//               | STOP |PL/PS | MUTE | |      |      |      |
+            bindings = <
+    &bt BT_CLR   XXX          XXX          XXX          XXX            XXX XXX       XXX      XXX      XXX
+    XXX          XXX          XXX          XXX          XXX            XXX XXX       XXX      XXX      XXX
+    &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT   XXX            XXX &kp RSHFT &kp RGUI &kp LALT &kp RCTL
+    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   XXX XXX       XXX      XXX      XXX
+                                  &kp C_STOP   &kp C_PP   &kp C_MUTE   ___ ___ ___
+                >;
+        };
     };
 };
 
