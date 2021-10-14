@@ -2,9 +2,10 @@
 #define ___ &trans
 
 #define BASE    0
-#define FUNC    1
-#define NAV     2
-#define MDA     3
+#define GAME    1
+#define FUNC    2
+#define NAV     3
+#define MDA     4
 
 #define MNBR  LC(F2)
 #define REDO  LS(LG(Z))

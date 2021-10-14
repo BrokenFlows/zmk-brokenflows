@@ -31,7 +31,23 @@
     &kp Q       &kp W      &kp E      &kp R       &kp T   &kp Y  &kp U       &kp I      &kp O      &kp P
     &hm LCTRL A &hm LALT S &hm LGUI D &hm LSHFT F &kp G   &kp H  &hm RSHFT J &hm RCMD K &hm LALT L &hm RCTRL SEMI
     &kp Z       &kp X      &kp C      &kp V       &kp B   &kp N  &kp M       &kp COMMA  &kp DOT    &kp FSLH
-                      &lt FUNC DEL &lt NAV BSPC &kp ESC   &kp RET &lt MDA SPACE &kp TAB
+                      &lt FUNC DEL &lt NAV BSPC &kp ESC   &kp RET &lt MDA SPACE &lt FUNC TAB
+                >;
+        };
+
+        game_layer {
+// -----------------------------------------------------------------------------------------
+// |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  |
+// |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
+// |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
+// |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
+//             | TAB |SPACE| ESC |   | ENT |BSPACE| DEL |
+            bindings = <
+    &kp N1      &kp N2     &kp N3     &kp N4      &kp N5  &kp N6 &kp N7      &kp N8     &kp N9     &kp N0
+    &kp Q       &kp W      &kp E      &kp R       &kp T   &kp Y  &kp U       &kp I      &kp O      &kp P
+    &kp A       &kp S      &kp D      &kp F       &kp G   &kp H  &kp J       &kp K      &kp L      &kp SEMI
+    &kp Z       &kp X      &kp C      &kp V       &kp B   &kp N  &kp M       &kp COMMA  &kp DOT    &kp FSLH
+                      &mt LCTRL TAB &kp SPACE &mt LSHFT ESC   &kp RET &kp BSPC &mt FUNC DEL
                 >;
         };
 

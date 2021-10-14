@@ -29,6 +29,8 @@ COMBO(grave, 40, &kp GRAVE, 31 32, BASE)
 COMBO(tilde, 40, &kp TILDE, 32 33, BASE)
 COMBO(bslsh, 40, &kp BSLH,  37 38, BASE)
 
+COMBO(game,  40, &tog GAME, 12 21 22 23, BASE GAME)
+
 COMBO(btldr, 100, &bootloader, 14 34, BASE)
 COMBO(reset, 100, &reset, 13 33, BASE)
 COMBO(clear, 100, &bt BT_CLR, 0 2 4, BASE)
