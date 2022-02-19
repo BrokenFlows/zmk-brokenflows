@@ -1,10 +1,11 @@
 # ZMK Config
 My keyboard configs and keymaps
 
-Currently defines and builds:
+Currently defines and/ or builds:
 - [Ishka](https://github.com/BrokenFlows/ishka) (left and right) with [nice!nano](https://nicekeyboards.com/nice-nano) V2s
 - [Lak](https://github.com/BrokenFlows/Lak) with nice!nano V1
 - [Corne](https://github.com/foostan/crkbd) (left and right) with nice!nano V2s
+- [QAZ](https://cbkbd.bigcartel.com/product/qaz-keyboard-kit) with nice!nano V1
 
 The pre-built firmware files can be found by
 1. Clicking **Actions** above

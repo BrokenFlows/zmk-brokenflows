@@ -1,0 +1,33 @@
+/*                KEY POSITIONS
+  ╭─────────────────────────────────────────╮
+  │  0   1   2   3   4   5   6   7   8   9  │
+  │  10  11  12  13  14  15  16  17  18  19 │
+  │   20   21  22  23  24  25  26  27   28  │
+  │  29  30  31     32   33      34  35  36 │
+  ╰─────────────────────────────────────────╯*/
+
+compatible = "zmk,combos";
+
+#define COMBO(NAME, TIMEOUT, BINDINGS, KEYPOS, LAYERS) \
+    combo_##NAME { \
+        timeout-ms = <TIMEOUT>; \
+        key-positions = <KEYPOS>; \
+        bindings = <BINDINGS>; \
+        layers = <LAYERS>; \
+    };
+
+COMBO(minus, 40, &kp MINUS,  6  7, BASE NUM)
+COMBO(equal, 40, &kp EQUAL,  7  8, BASE NUM)
+COMBO(quote, 40, &kp SQT,   17 18, BASE)
+COMBO(lbrc,  40, &kp LBRC,   1  2, BASE)
+COMBO(rbrc,  40, &kp RBRC,   2  3, BASE)
+COMBO(lbkt,  40, &kp LBKT,  11 12, BASE)
+COMBO(rbkt,  40, &kp RBKT,  12 13, BASE)
+COMBO(grave, 40, &kp GRAVE, 21 22, BASE NUM)
+COMBO(tilde, 40, &kp TILDE, 22 23, BASE NUM)
+COMBO(bslsh, 40, &kp BSLH,  27 28, BASE)
+
+COMBO(btldr, 100, &bootloader, 1 28, BASE)
+COMBO(reset, 100, &reset, 1 19, BASE)
+COMBO(o_ble, 100, &out OUT_BLE, 0 10 20, BASE)
+
