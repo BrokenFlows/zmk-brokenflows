@@ -54,7 +54,7 @@
                 &kp ESC &trans &trans &trans      &trans &trans   &kp PG_UP   &kp UP       &kp PG_DN &kp BSPC
                 &kp TAB &trans &trans &trans      &trans &kp HOME &kp LEFT    &kp DOWN     &kp RIGHT &kp END
                 &trans         &trans &trans      &trans &trans   &trans      &trans       &trans    &trans
-                &trans  &trans &trans    &trans          &trans               &trans       &trans    &kp FSLH
+                &trans  &trans &trans    &trans          &kp RET              &trans       &trans    &kp FSLH
                 >;
         };
     };
