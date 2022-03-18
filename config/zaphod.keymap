@@ -38,14 +38,7 @@
     };
 
     behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods";
-            #binding-cells = <2>;
-            tapping_term_ms = <200>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
+        #include "behaviors.dtsi"
     };
 
     keymap {
@@ -54,9 +47,9 @@
         default_layer {
             label = "Base";
             bindings = <
-                &kp Q      &kp W      &kp E       &kp R          &kp T         &kp Y         &kp U           &kp I       &kp O      &kp P
-                &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F    &kp G         &kp H         &hm RSHFT J     &hm RCTRL K &hm LALT L &hm LGUI SEMI
-                &kp Z      &kp X      &kp C       &kp V          &kp B         &kp N         &kp M           &kp COMMA   &kp DOT    &kp FSLH
+                &kp Q       &kp W      &kp E      &kp R       &kp T   &kp Y  &kp U       &kp I      &kp O      &kp P
+                &hm LCTRL A &hm LALT S &hm LGUI D &hm LSHFT F &kp G   &kp H  &hm RSHFT J &hm RCMD K &hm LALT L &hm RCTRL SEMI
+                &kp Z       &kp X      &kp C      &kp V       &kp B   &kp N  &kp M       &kp COMMA  &kp DOT    &kp FSLH
                                                   &lt NAV_L BKSP &lt OTH_L ESC &lt NUM_L RET &lt SYM_L SPACE
             >;
         };
@@ -67,7 +60,7 @@
                 &trans     &trans     &trans      &trans          &trans       &trans           &trans         &trans      &trans     &trans
                 &trans     &trans     &trans      &trans          &trans       &trans           &kp LARW       &kp DARW    &kp UARW   &kp RARW
                 &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &kp PG_DN   &kp PG_UP  &kp END
-                                                  &trans          &trans       &kp ESC          &kp DEL
+                                                  &trans          &trans       &trans           &trans 
             >;
         };
 
