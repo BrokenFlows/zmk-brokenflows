@@ -63,7 +63,7 @@
             bindings = <
                 &kp LBRC  &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp RBRC      XXX XXX       XXX      XXX      XXX
                 &kp DQT   &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp PLUS      XXX &kp RSHFT &kp RGUI &kp LALT &kp RCTL
-                &kp TILDE &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(BSLH)  XXX XXX       XXX      XXX      XXX
+                &kp TILDE &kp LS(N1) &kp LS(N2) &kp LA(N3) &kp LS(BSLH)  XXX XXX       XXX      XXX      XXX
                                                 &kp LS(N0) &kp UNDER     ___ ___    
             >;
         };
