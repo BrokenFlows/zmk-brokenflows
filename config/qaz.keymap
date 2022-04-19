@@ -45,7 +45,7 @@
         nav {
             bindings = <
                 &kp ESC      &trans       &trans       &trans       &trans     &trans   &kp PG_UP   &kp UP       &kp PG_DN &kp BSPC
-                &hm LCTL TAB &kp LALT     &kp LGUI     &kp LSHFT    &trans     &kp HOME &kp LEFT    &kp DOWN     &kp RIGHT &kp END
+                &hm LCTL TAB &kp LALT     &kp LGUI     &kp LSHFT    &CAPS      &kp HOME &kp LEFT    &kp DOWN     &kp RIGHT &kp END
                 &kp C_PREV                &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &trans   &trans      &trans       &trans    &trans
                 &trans       &trans       &trans       &trans                  &kp RET              &trans       &trans    &kp FSLH
                 >;
