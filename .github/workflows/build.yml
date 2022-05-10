@@ -25,6 +25,8 @@ jobs:
             shield: corne_right
           - board: nice_nano
             shield: qaz
+          - board: nice_nano
+            shield: romac
     steps:
       - name: Checkout
         uses: actions/checkout@v2

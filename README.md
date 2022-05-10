@@ -7,6 +7,7 @@ Currently defines and/ or builds:
 - [Zaphod](https://lpgala.xyz/gb/zaphod-r1)
 - [Corne](https://github.com/foostan/crkbd) (left and right) with nice!nano V2s
 - [QAZ](https://cbkbd.bigcartel.com/product/qaz-keyboard-kit) with nice!nano V1
+- [RoMac](https://42keebs.eu/shop/kits/romac-12-key-macropad-kit-black-white-blue-red-green-yellow/) with nice!nano V1
 
 The pre-built firmware files can be found by
 1. Clicking **Actions** above
