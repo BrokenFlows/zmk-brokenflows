@@ -21,6 +21,7 @@
             key-positions = <0 10>;
             bindings = <&kp Z>;
         };
+
         combo_b {
             timeout-ms = <40>;
             key-positions = <4 14>;
@@ -30,7 +31,7 @@
         combo_y {
             timeout-ms = <40>;
             key-positions = <5 15>;
-            bindings = <&kp Y>;
+            bindings = <&kp N>;
         };
 
         combo_slash {
@@ -49,6 +50,7 @@
 	    timeout-ms = <70>;
             key-positions = <29 30>;
             bindings = <&lt FUNC TAB>;
+        };
     };
 
     keymap {
@@ -56,9 +58,9 @@
 
         default_layer {
             bindings = <
-                &kp Q      &kp W      &kp E       &kp R           &kp T        &kp H            &kp U          &kp I       &kp O      &kp P
-                &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F     &kp G        &kp N            &hm RSHFT J    &hm RCTRL K &hm LALT L &hm RGUI QUOT
-                           &kp X      &kp C       &kp V                                         &kp M          &kp COMMA  &kp DOT
+                &kp Q       &kp W      &kp E      &kp R           &kp T        &kp Y            &kp U          &kp I      &kp O      &kp P
+                &hm LCTRL A &hm LALT S &hm LGUI D &hm LSHFT F     &kp G        &kp H            &hm RSHFT J    &hm RGUI K &hm LALT L &hm RCTRL SEMI
+                            &kp X      &kp C      &kp V                                         &kp M          &kp COMMA  &kp DOT
                                                   &lt NAV BKSP    &lt MDA ESC  &lt SYM RET      &lt NUM SPACE
             >;
         };
