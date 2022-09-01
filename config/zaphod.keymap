@@ -13,6 +13,10 @@
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 // &lt { quick_tap_ms = <200>; };
 
+&kscan0 {
+  debounce-period = <12>;
+};
+
 / {
     combos {
         #include "3X-key_combos.dtsi"
