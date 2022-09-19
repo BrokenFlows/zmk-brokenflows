@@ -15,7 +15,7 @@
 
 / {
     kscan0 {
-        debounce-press-ms = <20>;
+        debounce-press-ms = <30>;
     };
     
     combos {
