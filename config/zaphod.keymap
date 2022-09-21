@@ -85,7 +85,7 @@
         nav_layer {
             label = "Nav";
             bindings = <
-                XXX      XXX      XXX      XXX       XXX  &kp PSCRN ___      ___        ___       ___   
+                XXX      XXX      XXX      XXX       XXX  &kp PSCRN &kp SLCK ___        ___       ___   
                 &kp LCTL &kp LALT &kp LGUI &kp LSHFT XXX  &kp CAPS  &kp LARW &kp DARW   &kp UARW  &kp RARW
                 XXX      XXX      XXX      XXX       XXX  &kp INS   &kp HOME &kp PG_DN  &kp PG_UP &kp END
                                            ___       ___  ___       ___     
