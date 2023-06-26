@@ -70,13 +70,13 @@
         nav_layer {
 // --------------------------------------------------------------------------
 // |      |      |      |      |      | |      |MENUBR|      |      |       |
-// |      |      |      |      |      | | REDO | PASTE| COPY |  CUT |  UNDO |
+// |      |      |      |      |      | |      |      |      |      |       |
 // | LCTL | LALT | LGUI |LSHFT |      | |CAPSLK| LEFT | DOWN |  UP  | RIGHT |
 // |      |      |      |      |      | |INSERT| HOME | PGDN | PGUP |  END  |
 //               |      |      |      | |RETURN| SPACE|  TAB |
             bindings = <
     XXX      XXX      XXX      XXX       XXX   XXX      &kp MNBR  XXX       XXX       XXX   
-    XXX      XXX      XXX      XXX       XXX   &kp REDO &kp CUT   &kp COPY  &kp PASTE &kp UNDO
+    XXX      XXX      XXX      XXX       XXX   XXX      XXX       XXX       XXX       XXX
     &kp LCTL &kp LALT &kp LGUI &kp LSHFT XXX   &kp CAPS &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
     XXX      XXX      XXX      XXX       XXX   &kp INS  &kp HOME  &kp PG_DN &kp PG_UP &kp END
                       ___      ___       ___   &kp RET  &kp SPACE &kp TAB
