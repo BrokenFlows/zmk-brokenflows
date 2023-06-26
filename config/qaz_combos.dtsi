@@ -28,6 +28,6 @@ COMBO(tilde, 40, &kp TILDE, 22 23, BASE NUM)
 COMBO(bslsh, 40, &kp BSLH,  27 28, BASE)
 
 COMBO(btldr, 100, &bootloader, 1 28, BASE)
-COMBO(reset, 100, &reset, 1 19, BASE)
+COMBO(rst, 100, &sys_reset, 1 19, BASE)
 COMBO(o_ble, 100, &out OUT_BLE, 0 10 20, BASE)
 
