@@ -85,13 +85,13 @@
 
         media_layer {
 // --------------------------------------------------------------------------
-// |BT_CLR|      |      |      |      | |      |      |      |      |       |
+// |BT_CLR|      |      |      |TOGOUT| |      |      |      |      |       |
 // |      |      |      |      |      | |      |      |      |      |       |
 // | PREV | DOWN |  UP  | NEXT |      | |      |RSHFT | RGUI | LALT | RCTL  |
 // | BT0  | BT1  | BT2  | BT3  | BT4  | |      |      |      |      |       |
 //               | STOP |PL/PS | MUTE | |      |      |      |
             bindings = <
-    &bt BT_CLR   XXX          XXX          XXX          XXX            XXX XXX       XXX      XXX      XXX
+    &bt BT_CLR   XXX          XXX          XXX          &out OUT_TOG   XXX XXX       XXX      XXX      XXX
     XXX          XXX          XXX          XXX          XXX            XXX XXX       XXX      XXX      XXX
     &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT   XXX            XXX &kp RSHFT &kp RGUI &kp LALT &kp RCTL
     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   XXX XXX       XXX      XXX      XXX
