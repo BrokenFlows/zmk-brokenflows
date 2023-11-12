@@ -94,5 +94,15 @@
                                                   &kp LS(N0)      &kp UNDER     &trans          &trans
             >;
         };
+
+        media_layer {
+            label = "Media";
+            bindings = <
+                XXX      XXX      XXX      XXX       XXX  ___  ___            ___          ___          &bt BT_CLR
+                &kp LCTL &kp LALT &kp LGUI &kp LSHFT XXX  ___  &kp C_PREV     &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
+                         XXX      XXX      XXX                 &bt BT_SEL 2   &bt BT_SEL 1 &bt BT_SEL 0
+                                           ___       ___  &kp C_MUTE   &kp C_PLAY_PAUSE
+            >;
+        };
     };
 };
