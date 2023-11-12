@@ -9,6 +9,14 @@
 #include <dt-bindings/zmk/bt.h>
 #include "3X-key.h"
 
+#define COMBO(NAME, TIMEOUT, BINDINGS, KEYPOS, LAYERS) \
+    combo_##NAME { \
+        timeout-ms = <TIMEOUT>; \
+        key-positions = <KEYPOS>; \
+        bindings = <BINDINGS>; \
+        layers = <LAYERS>; \
+    };
+
 / {
     behaviors {
         #include "behaviors.dtsi"
@@ -16,41 +24,22 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_z {
-            timeout-ms = <40>;
-            key-positions = <0 10>;
-            bindings = <&kp Z>;
-        };
-
-        combo_b {
-            timeout-ms = <40>;
-            key-positions = <4 14>;
-            bindings = <&kp B>;
-        };
-
-        combo_y {
-            timeout-ms = <40>;
-            key-positions = <5 15>;
-            bindings = <&kp N>;
-        };
-
-        combo_slash {
-            timeout-ms = <40>;
-            key-positions = <9 19>;
-            bindings = <&kp SLASH>;
-        };
-
-        del_t {
-	    timeout-ms = <70>;
-            key-positions = <26 27>;
-            bindings = <&kp DEL>;
-        };
-
-        fn_lt {
-	    timeout-ms = <70>;
-            key-positions = <28 29>;
-            bindings = <&lt FUNC TAB>;
-        };
+        COMBO(Z, 40, &kp Z, 0 10, BASE)
+        COMBO(B, 40, &kp B, 4 14, BASE)
+        COMBO(Y, 40, &kp Y, 5 15, BASE)
+        COMBO(SLASH, 40, &kp SLASH, 9 19, BASE)
+	COMBO(DEL, 40, &kp DEL, 26 27, BASE)
+        COMBO(FN, 40, &lt FUNC TAB, 28 29, BASE)
+        COMBO(minus, 40, &kp MINUS,  6  7, BASE)
+	COMBO(equal, 40, &kp EQUAL,  7  8, BASE)
+	COMBO(quote, 40, &kp SQT,   17 18, BASE)
+	COMBO(lbrc,  40, &kp LBRC,   1  2, BASE)
+	COMBO(rbrc,  40, &kp RBRC,   2  3, BASE)
+	COMBO(lbkt,  40, &kp LBKT,  11 12, BASE)
+	COMBO(rbkt,  40, &kp RBKT,  12 13, BASE)
+	COMBO(grave, 40, &kp GRAVE, 20 21, BASE)
+	COMBO(tilde, 40, &kp TILDE, 21 22, BASE)
+	COMBO(bslsh, 40, &kp BSLH,  24 25, BASE)
     };
 
     keymap {
@@ -62,16 +51,6 @@
                 &hm LCTRL A &hm LALT S &hm LGUI D &hm LSHFT F     &kp G        &kp H            &hm RSHFT J    &hm RGUI K &hm LALT L &hm RCTRL SEMI
                             &kp X      &kp C      &kp V                                         &kp M          &kp COMMA  &kp DOT
                                                   &lt NAV BKSP    &lt MDA ESC  &lt SYM RET      &lt NUM SPACE
-            >;
-        };
-
-        nav_layer {
-            label = "Nav";
-            bindings = <
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &kp UARW &kp PG_UP  &trans
-                &trans     &trans     &trans      &trans          &trans       &trans           &kp LARW       &kp DARW &kp RARW   &trans
-                           &trans     &trans      &trans                                        &kp END        &trans   &kp PG_DN
-                                                  &trans          &trans       &kp ESC          &kp DEL
             >;
         };
 
@@ -92,6 +71,26 @@
                 &kp COLON  &kp LS(N4) &kp LS(N5)  &kp LS(N6)      &kp PLUS      &trans          &trans         &trans      &trans     &trans
                            &kp LS(N1) &kp LS(N2)  &kp LS(N3)                                    &trans         &trans      &trans
                                                   &kp LS(N0)      &kp UNDER     &trans          &trans
+            >;
+        };
+
+        function_layer {
+            label = "Func";
+            bindings = <
+                &kp F10    &kp F7     &kp F8      &kp F9          &trans        &trans          &trans         &trans      &trans     &trans
+                &kp F11    &kp F4     &kp F5      &kp F6          &trans        &trans          &trans         &trans      &trans     &trans
+                           &kp F1     &kp F2      &kp F3                                        &trans         &trans      &trans
+                                                  &kp F12         &trans        &trans          &trans
+            >;
+        };
+
+        nav_layer {
+            label = "Nav";
+            bindings = <
+                &trans     &trans     &trans      &trans          &trans       &trans           &kp HOME       &kp PGDN &kp PG_UP  &kp END
+                &trans     &trans     &trans      &trans          &trans       &trans           &kp LARW       &kp DARW &kp UARW   &kp RARW
+                           &trans     &trans      &trans                                        &trans         &trans   &trans
+                                                  &trans          &trans       &trans           &trans
             >;
         };
 
