@@ -33,7 +33,7 @@
 
         // second attempt at missing alphas
         COMBO(Za, 40, &kp Z, 10 11, BASE)
-        COMBO(Ba, 40, &kp B, 13 22, BASE)
+        COMBO(Ba, 40, &kp B, 12 22, BASE)
         COMBO(Na, 40, &kp N, 17 23, BASE)
         COMBO(SLASHa, 40, &kp SLASH, 18 19, BASE)
 
