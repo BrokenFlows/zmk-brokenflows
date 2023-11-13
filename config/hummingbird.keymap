@@ -35,6 +35,8 @@
         COMBO(Za, 40, &kp Z, 10 11, BASE)
         COMBO(Ba, 40, &kp B, 12 22, BASE)
         COMBO(Na, 40, &kp N, 17 23, BASE)
+        COMBO(Nb, 40, &kp N, 17 18, BASE)
+        COMBO(Nc, 40, &kp N, 22 23, BASE)
         COMBO(SLASHa, 40, &kp SLASH, 18 19, BASE)
 
         // regular combos but adjusted key positions
