@@ -24,10 +24,20 @@
 
     combos {
         compatible = "zmk,combos";
+
+        // first attempt at missing alphas
         COMBO(Z, 40, &kp Z, 0 10, BASE)
         COMBO(B, 40, &kp B, 4 14, BASE)
         COMBO(N, 40, &kp N, 5 15, BASE)
         COMBO(SLASH, 40, &kp SLASH, 9 19, BASE)
+
+        // second attempt at missing alphas
+        COMBO(Z, 40, &kp Z, 10 11, BASE)
+        COMBO(B, 40, &kp B, 13 22, BASE)
+        COMBO(N, 40, &kp N, 17 23, BASE)
+        COMBO(SLASH, 40, &kp SLASH, 18 19, BASE)
+
+        // regular combos but adjusted key positions
 	COMBO(DEL, 40, &kp DEL, 26 27, BASE)
         COMBO(FN, 40, &lt FUNC TAB, 28 29, BASE)
         COMBO(minus, 40, &kp MINUS,  6  7, BASE)
