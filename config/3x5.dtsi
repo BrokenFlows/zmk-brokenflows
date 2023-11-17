@@ -97,9 +97,9 @@
         nav_layer {
             label = "Nav";
             bindings = <
-                XXX      XXX      XXX      XXX       XXX  &kp PSCRN &kp SLCK ___        ___       ___   
-                &kp LCTL &kp LALT &kp LGUI &kp LSHFT XXX  &kp CAPS  &kp LARW &kp DARW   &kp UARW  &kp RARW
-                XXX      XXX      XXX      XXX       XXX  &kp INS   &kp HOME &kp PG_DN  &kp PG_UP &kp END
+                XXX      XXX      XXX      XXX         XXX  &kp PSCRN &kp SLCK ___        ___       ___   
+                &kp LCTL &kp LALT &kp LGUI &kp LSHFT   XXX  &kp CAPS  &kp LARW &kp DARW   &kp UARW  &kp RARW
+                XXX      XXX      XXX      &key_repeat XXX  &kp INS   &kp HOME &kp PG_DN  &kp PG_UP &kp END
             #ifdef THREE_THUMBS
                                   ___      ___       ___  ___        ___     ___
             #else
